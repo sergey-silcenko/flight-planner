@@ -1,0 +1,12 @@
+
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+  - script: |
+      docker build -t example-project:latest .
+      docker run --rm -u root example-project:latest build
+    displayName: 'Build'
