@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.6.RELEASE'
 	id 'java'
+	id 'checkstyle'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -18,4 +19,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
+}
+checkstyle {
+	toolVersion = "8.17"
+	maxWarnings = 0
 }
