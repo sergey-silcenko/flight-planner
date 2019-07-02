@@ -7,6 +7,6 @@ pool:
 
 steps:
   - script: |
-      docker build -t flight-plinner:latest .
+      docker build -t flight-planner:latest .
       docker run --rm -u root flight-planner:latest build
     displayName: 'Build'
