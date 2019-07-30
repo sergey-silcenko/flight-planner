@@ -116,7 +116,6 @@ public class FlightsRepository {
         return true;
     }
 
-
     public FlightDTO findById(Long id) {
 
         for (FlightDTO flightDTO : flightDTOS) {
